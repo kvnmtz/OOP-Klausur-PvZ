@@ -5,7 +5,7 @@
 #include "random.hpp"
 #include "zombie.h"
 
-#pragma warning(disable : 28020)
+#pragma warning(disable : 28020) // zombieIndex is always in the correct array bounds
 
 int main()
 {
