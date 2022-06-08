@@ -10,6 +10,7 @@ int CTransportExtension::GetAvailablePlants() const
     int plants = 0;
     for (const auto element : Garden.GetFields())
     {
+        /* Erklärung zu dynamic_cast in defenseplant.cpp */
         const auto plant = dynamic_cast<CPlant*>(element);
         if (plant)
         {
