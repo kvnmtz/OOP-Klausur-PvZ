@@ -12,8 +12,8 @@ int main()
     const auto garden = new CGarden();
 
     const int plantIndex = Random::GetRandomNumber(0, 24);
-    const auto plant = new CDefensePlant(*garden, EHealthState::Thriving, 250, 75, false, true, true);
-    garden->GetFields()[plantIndex] = plant;
+    const auto kenneth = new CDefensePlant(*garden, EHealthState::Thriving, 250, 75, false, true, true);
+    garden->GetFields()[plantIndex] = kenneth;
 
     for (int i = 0; i < 2; ++i)
     {
